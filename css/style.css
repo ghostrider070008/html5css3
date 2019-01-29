@@ -1,0 +1,26 @@
+header{
+    width: 100%;
+    height: 100px;
+}
+.headersec{
+    width: 1170px;
+    margin: 0 auto;
+}
+h1{
+    float: left;
+    margin-top: 0;
+    margin-right: 435px;
+}
+nav{
+
+    margin-top: 44px;
+}
+nav a{
+    margin-right: 30px;
+}
+nav a:nth-child(7){
+    margin-right: 0;
+}
+main{
+    height: 3000px;
+}
