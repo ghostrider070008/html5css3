@@ -1,26 +1,200 @@
 header{
-    width: 100%;
+    background: #202020;
     height: 100px;
 }
 .headersec{
     width: 1170px;
     margin: 0 auto;
+    position: relative;
+    height: 100px;
 }
 h1{
-    float: left;
-    margin-top: 0;
-    margin-right: 435px;
+    margin: 0;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    font-family: "Lucida Sans Unicode";
+    color:  #fefefe;
+    font-size: 24px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
 }
 nav{
-
-    margin-top: 44px;
+    position: absolute;
+    top: 44px;
+    right: 0;
+}
+nav a:hover{
+    background: #e25050;
+    transition: all 0.8s ease;
 }
 nav a{
-    margin-right: 30px;
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:  #fefefe;
+    font-family: "MS Sans Serif";
+    font-size: 14px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: right;
+    padding: 10px;
+
+}
+.slider{
+    position: relative;
 }
 nav a:nth-child(7){
     margin-right: 0;
 }
 main{
+    margin: 0;
+    width: 100%;
     height: 3000px;
+}
+.leftarrow{
+    background: url("../img/Ellipse 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 153px;
+    top: 293px;
+}
+.rightarrow{
+    background: url("../img/Ellipse 1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 153px;
+    top: 293px;
+}
+.slider .fa-angle-left:hover, .slider .fa-angle-right:hover{
+    cursor: pointer;
+    color: burlywood;
+}
+.slider .fa-angle-left, .slider .fa-angle-right {
+    font-size: 15pt;
+    color: white;
+    padding-top:5px;
+
+}
+.slider{
+    height: 581px;
+    background: url("../img/slide2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slidertext{
+    width: 1170px;
+    height: 581px;
+    margin: 0 auto;
+    position: relative;
+}
+.fa-phone{
+    transform: rotate(90deg);
+    color:  #ffffff;
+    width: 14px;
+    height: 14px;
+}
+
+.numbertel{
+    display: block;
+    padding-top: 8px;
+    height: 26px;
+    width: 140px;
+    text-align: center;
+    background: #e25050;
+    margin-left: 39px;
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.headertel{
+    width: 40px;
+    height: 26px;
+    background: #bd4141;
+    padding-top: 7px;
+    float: left;
+    text-align: center;
+}
+.textslider{
+    margin: 0;
+    position: absolute;
+    top: 252px;
+    left: 0;
+    width: 449px;
+    height: 49px;
+    text-align: center;
+    font-family: Oswald;
+    color: #fefefe;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-top: 18px;
+    background: rgba(32, 32, 32, 0.9);
+}
+.textslider2{
+    position: absolute;
+    top: 320px;
+    left: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: Oswald;
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    background-color: rgba(32, 32, 32, 0.9);
+    width: 261px;
+    height: 39px;
+    padding-top: 10px;
+}
+.telephone{
+    width: 180px;
+    right: 22px;
+    position: absolute;
+}
+.welcome{
+    height: 928px;
+}
+.welcomecontent{
+    height: 928px;;
+    width: 1170px;
+    margin: 0 auto;
+}
+.welcometext{
+    font-family: Impact;
+    color:  #202020;
+    font-size: 30px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+.welcometext em{
+    color: #ff684f;
+    font-style: normal;
+}
+.welcometexth4{
+    margin-top: 5px;
+    font-family: DroidSerif;
+    color:  #a2a2a2;
+    font-size: 16px;/* Приближение из-за подстановки шрифтов */
+    font-style: italic;
+    line-height: 30px;/* Приближение из-за подстановки шрифтов */
+    text-align: center;
 }
