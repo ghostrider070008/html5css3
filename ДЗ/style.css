@@ -1,0 +1,26 @@
+.svg{
+    width: 600px;
+    height: 800px;
+    float: left;
+}
+.svg2{
+    width: 400px;
+    height: 600px;
+    float: left;
+}
+main{
+    height: ;
+}
+.clearfloat{
+    width: 100%;
+    height: 1px;
+    clear: both;
+}
+.fon{
+    width: 100%;
+    height: 900px;
+    background: url("1.png"), url("2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: contain, contain;
+}
