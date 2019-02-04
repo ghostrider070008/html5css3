@@ -179,11 +179,10 @@ main{
     position: absolute;
 }
 .welcome{
-    height: 928px;
 }
 .welcomecontent{
-    height: 928px;;
-    width: 1170px;
+    max-width: 1170px;
+    min-width: 300px;
     margin: 0 auto;
 }
 .welcometext{
@@ -252,12 +251,13 @@ main{
 }
 .trainers{
     width: 100%;
-    height: 873px;
-    background: url("../img/avatar.png");
+    min-height: 873px;
+    background: url(../img/avatar.png);
 }
 .trainerscontent{
-    width: 1170px;
-    height: 873px;
+    max-width: 1170px;
+    min-width: 300px;
+    min-height: 873px;
     margin: 0 auto;
 }
 .trainersh2{
