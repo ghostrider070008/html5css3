@@ -321,3 +321,28 @@ main{
     line-height: 24px;/* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
+@media screen and (max-width: 640px){
+.figuretrainers{
+    width: 100%;
+    display: block;
+    margin: 30px auto 0 auto;
+
+}
+    .welcomeblock{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .imgtrainers{
+        width: 100%;
+    }
+    .figuretrainers:nth-child(4n) {
+        width: 100%;
+
+    }
+    .slider{
+
+    }
+
+}
