@@ -346,3 +346,6 @@ main{
     }
 
 }
+.galleryimg img{
+    width: 270px;
+}
