@@ -346,6 +346,92 @@ main{
     }
 
 }
+#galleryimage1{
+    transform: scale(1);
+    transition: all 1.5s;
+    position: relative;
+    z-index: 110;
+}
+
+#galleryimage1:hover{
+    transform: scale(1.5);
+    transition: transform 1.5s;
+    z-index: 112;
+}
+
+#galleryimage2{
+    transform: rotate(0);
+    transition: all 1.5s;
+    position: relative;
+    z-index: 109;
+}
+#galleryimage2:hover{
+    transform: rotate(180deg);
+    transition: transform 1.5s;
+    z-index: 111;
+}
+#galleryimage3{
+    transform: rotate(0);
+    transition: all 3s;
+    position: relative;
+    z-index: 109;
+}
+#galleryimage3:hover{
+    transform: rotate(360deg);
+    transition: all 3s;
+    position: relative;
+    z-index: 110;
+}
+
+@keyframes animation2{
+    0% { transform: rotate(0deg); }
+    50% { transform: scale(1.5);
+    }
+
+    99% {transform: rotate(180deg);}
+    100% {transform: none;}
+}
+#galleryimage4{
+    position: relative;
+}
+#galleryimage4:hover{
+    animation: animation2 4s infinite;
+    z-index: 120;
+}
+.textgalleryh2{
+    font-family: Oswald;
+    color:  #202020;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+}
+.textgallery p{
+    max-width: 593px;
+    font-family: OpenSans;
+    color:  #777777;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    margin: 59px auto 63px auto;
+}
+.gallery .band{
+    background: #202020;
+}
+.gallerycontent{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.galleryimg{
+    float: left;
+    margin-right: 30px;
+    margin-left: 0;
+
+}
+.galleryimg:nth-child(4n){
+    margin-right: 0;
+}
 .galleryimg img{
     width: 270px;
 }
