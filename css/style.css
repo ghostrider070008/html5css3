@@ -282,12 +282,79 @@ main{
     height: auto;
     margin-top: 30px;
 }
+.reverse{
+    position: absolute;
+    width: 270px;
+    height: 317px;
+    z-index: 600;
+    background: #ffffff;
+}
+
+.reverse{
+    opacity: 0;
+    transition: all 2s;
+}
+.reverse:hover{
+    opacity: 1;
+    transition: all 2s;
+}
+.figuretrainers .reverse .figuretrainersh{
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: Oswald;
+    color:  #202020;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    white-space: pre-line;
+}
+.figuretrainers .reverse p span{
+    font-family: Oswald;
+    color:  #afafaf;
+    font-size: 12px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+.textp{
+    font-family: OpenSans;
+    color:  #777777;
+    font-size: 13px;/* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 21px;/* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    width: 223px;
+    height: 118px;
+    margin-left: 22px;
+}
+.trainersicon a{
+    color:  #afafaf;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 15px;
+}
+.trainersicon a:hover{
+    color: #de504e;
+}
+.trainersicon a:last-child{
+    padding-right: 0;
+}
+.trainersicon{
+    width: 180px;
+    height: 15px;
+    margin: 68px auto 0 auto;
+}
 .figuretrainers{
     width: 270px;
     float: left;
     margin: 0;
     margin-right: 30px;
     margin-top: 30px;
+    position: relative;
+    z-index: 300;
 }
 .figuretrainers:nth-child(4n){
     width: 270px;
