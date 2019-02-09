@@ -423,7 +423,7 @@ main{
 #galleryimage1:hover{
     transform: scale(1.5);
     transition: transform 1.5s;
-    z-index: 112;
+    z-index: 1;
 }
 
 #galleryimage2{
@@ -501,4 +501,54 @@ main{
 }
 .galleryimg img{
     width: 270px;
+    position: relative;
+}
+.gallerycontentcontent p{
+    margin: 0;
+    padding-top: 12px;
+    padding-left: 0;
+    text-transform: capitalize;
+    font-family: Oswald;
+    color: #202020;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    white-space: pre-line;
+}
+.gallerycontentcontent span{
+    margin: 0;
+    text-transform: capitalize;
+    font-family: Oswald;
+    color: #afafaf;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.reversegallery{
+    height: 180px;
+    width: 270px;
+    background: rgba(226, 80, 80, 0.75);
+    position: absolute;
+    z-index: 1;
+}
+#galleryimage1{
+    width: 270px;
+    position: relative;
+    z-index: 2;
+}
+.reversegalleryicon{
+    background: url("../img/ico/Search.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 70px;
+    width: 45px;
+    height: 45px;
+}
+.reversegalleryicon:hover #galleryimage1{
+    z-index: 1;
+}
+.reversegalleryicon:hover{
+    z-index: 10;
 }
