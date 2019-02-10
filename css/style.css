@@ -11,13 +11,13 @@
 }
 header{
     background: #202020;
-    height: 100px;
+    min-height: 100px;
 }
 .headersec{
     width: 1170px;
     margin: 0 auto;
     position: relative;
-    height: 100px;
+    min-height: 100px;
 }
 h1{
     margin: 0;
@@ -388,19 +388,14 @@ main{
     line-height: 24px;/* Приближение из-за подстановки шрифтов */
     text-align: left;
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 599px){
 .figuretrainers{
     width: 100%;
     display: block;
     margin: 30px auto 0 auto;
 
 }
-    .welcomeblock{
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        margin-top: 20px;
-    }
+
     .imgtrainers{
         width: 100%;
     }
@@ -408,48 +403,9 @@ main{
         width: 100%;
 
     }
-    .slider{
 
-    }
 
 }
-#galleryimage1{
-    transform: scale(1);
-    transition: all 1.5s;
-    position: relative;
-    z-index: 110;
-}
-
-#galleryimage1:hover{
-    transform: scale(1.5);
-    transition: transform 1.5s;
-    z-index: 1;
-}
-
-#galleryimage2{
-    transform: rotate(0);
-    transition: all 1.5s;
-    position: relative;
-    z-index: 109;
-}
-#galleryimage2:hover{
-    transform: rotate(180deg);
-    transition: transform 1.5s;
-    z-index: 111;
-}
-#galleryimage3{
-    transform: rotate(0);
-    transition: all 3s;
-    position: relative;
-    z-index: 109;
-}
-#galleryimage3:hover{
-    transform: rotate(360deg);
-    transition: all 3s;
-    position: relative;
-    z-index: 110;
-}
-
 @keyframes animation2{
     0% { transform: rotate(0deg); }
     50% { transform: scale(1.5);
@@ -457,13 +413,6 @@ main{
 
     99% {transform: rotate(180deg);}
     100% {transform: none;}
-}
-#galleryimage4{
-    position: relative;
-}
-#galleryimage4:hover{
-    animation: animation2 4s infinite;
-    z-index: 120;
 }
 .textgalleryh2{
     font-family: Oswald;
@@ -500,6 +449,7 @@ main{
     margin-right: 0;
 }
 .galleryimg img{
+    height: 180px;
     width: 270px;
     position: relative;
 }
@@ -531,24 +481,198 @@ main{
     width: 270px;
     background: rgba(226, 80, 80, 0.75);
     position: absolute;
-    z-index: 1;
-}
-#galleryimage1{
-    width: 270px;
-    position: relative;
-    z-index: 2;
+    z-index:10;
+    opacity: 0;
 }
 .reversegalleryicon{
+    display: block;
     background: url("../img/ico/Search.png");
     background-size: cover;
     margin: auto;
     margin-top: 70px;
     width: 45px;
     height: 45px;
+
 }
-.reversegalleryicon:hover #galleryimage1{
-    z-index: 1;
+.galleryimage{
+
+    height: 180px;
 }
-.reversegalleryicon:hover{
-    z-index: 10;
+.reversegallery:hover{
+    opacity: 1;
+    transition: all 1s;
+}
+.navMobile{
+    display: none;
+}
+.navMobile{
+    width: 50px;
+    height: 50px;
+    background: url("../img/ico/Menu1.png");
+    background-size: cover;
+}
+.navMobileMenu{
+    display: none;
+    height: 350px;
+}
+
+/*Адаптив для Welcome*/
+@media screen and (max-width: 1170px) and (min-width: 770px) {
+
+    .welcomecontent{
+        width: 766px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .welcomeblock:nth-child(2n){
+        margin-right: 0;
+    }
+    .welcomeblock:nth-child(2n+1){
+        margin-right: 30px;
+    }
+    .slider{
+        display: none;
+    }
+    .headersec{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+
+}
+.navMobileMenu a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@media screen and (max-width: 769px) {
+    .navMobile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: url("../img/ico/Menu.png");
+        background-size: cover;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        cursor: pointer;
+    }
+    .navMobile:hover {
+        background: url("../img/ico/Menu1.png");
+        background-size: cover;
+        transition: all 0.8s ease;
+    }
+    .navMobile:hover+.navMobileMenu{
+        display: block;
+        min-width:150px;
+        text-align: center;
+        clear: both;
+        position: relative;
+    }
+    .navMobileMenu:hover{
+        display: block;
+        position: relative;
+    }
+    .navMobileMenu:hover~.navMobile{
+        background: url("../img/ico/Menu.png");
+    }
+
+    .welcomeblock{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .slider{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    .headersec{
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+}
+
+/*Адаптив для блока тренеры*/
+@media screen and (max-width: 897px) and (min-width: 600px) {
+    .fototrainers{
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fototrainers .clearfloat{
+        height: 50px;
+    }
+    .figuretrainers:nth-child(2n){
+        margin-right: 0px;
+
+    }
+}
+/*Адаптив для галлереи*/
+@media screen and (max-width: 1170px) and (min-width: 898px){
+    .fototrainers{
+        width: 876px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fototrainers .clearfloat{
+        height: 50px;
+    }
+    .figuretrainers:nth-child(3n){
+        margin-right: 0px;
+    }
+    .figuretrainers:nth-child(4n){
+         margin-right: 30px;
+     }
+
+}
+
+
+
+
+
+/*Адаптив для галлереи*/
+@media screen and (max-width: 1200px) and (min-width:890px){
+    .gallerycontentcontent{
+        width: 875px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .galleryimg:nth-child(4n){
+        margin-right: 30px;
+    }
+    .galleryimg:nth-child(3n){
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 889px) and (min-width:600px){
+    .gallerycontentcontent{
+        width: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .galleryimg{
+        margin-right: 30px;
+    }
+    .galleryimg:nth-child(2n){
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .galleryimg{
+        width: 100%;
+        min-width: 270px;
+        clear: both;
+    }
+    .galleryimg img{
+        width: 100%;
+        height: 100%;
+    }
 }
