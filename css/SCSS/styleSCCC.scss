@@ -1,0 +1,10 @@
+@mixin standartsize{
+  width: 100%;
+  height: 738px;
+}
+@mixin flexconteiner{
+  display: flex;
+}
+.price {
+  @include standartsize;
+}
