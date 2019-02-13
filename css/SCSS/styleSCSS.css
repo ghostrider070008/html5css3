@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+.priceh4name {
+    font-family: Oswald;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 21px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.priceh3h3cena {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 21px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.priceh3h3cena sup {
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 21px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.price {
+    width: 100%;
+    height: 738px;
+    background: #e25050;
+}
+
+.price .priceh3 {
+    text-transform: uppercase;
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 21px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 70px;
+    padding-top: 80px;
+}
+
+.conteinerprice {
+    display: flex;
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteinerprice li {
+    list-style-type: none;
+    font-family: OpenSans;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.conteinerprice ul {
+    padding: 0;
+}
+
+.conteinerprice a {
+    display: table;
+    width: 230px;
+    height: 54px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteinerprice a span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.priceprice {
+    width: 370px;
+    height: 505px;
+    background: #d14343;
+    border: 1px solid #d14343;
+    transition: all 1.5s;
+}
+
+.priceprice a {
+    margin-top: 29px;
+    font-family: Oswald;
+    color: #ffffff;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 21px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-decoration: none;
+    background: #e25050;
+    text-transform: uppercase;
+    transition: all 1.5s;
+}
+
+.priceprice:hover {
+    border: 1px solid white;
+    transition: all 1.5s;
+}
+
+.priceprice:hover a {
+    color: #e25050;
+    background-color: #ffffff;
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.priceprice:hover a:hover {
+    opacity: 0.5;
+    transition: all 1.5s;
+}
